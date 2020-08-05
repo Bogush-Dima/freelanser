@@ -1,0 +1,77 @@
+.footer {
+    border-top: 1px solid #e6eaed;
+    min-height: 90px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 90px;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        position: relative;
+        height: 20px;
+        width: 40px;
+
+        &-item {
+
+            &::before {
+                position: absolute;
+                font-family: "icomoon";
+                top: 0;
+                left: 0;
+                font-size: 20px;
+                color: $color_text;
+                transition: 0.3s;
+            }
+
+            &:hover::before {
+                color: $color_button;
+            }
+
+        }
+    }
+
+    &__link-1::before {
+        content: "\f099";
+    }
+
+    &__link-2::before {
+        content: "\f16d";
+    }
+
+    &__link-3::before {
+        content: "\f09a";
+    }
+
+    &__link-4::before {
+        content: "\f0d5";
+    }
+
+    &__text {
+        color: $color_text;
+        font-size: 13px;
+        line-height: 60px;
+    }
+}
+
+
+
+@media (max-width: 460px) {
+    .footer {
+        &__inner {
+            display: block;
+            text-align: center;
+        }
+
+        &__links {
+            justify-content: center;
+            margin-top: 15px;
+        }
+    }
+}

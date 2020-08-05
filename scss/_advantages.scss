@@ -1,0 +1,28 @@
+.advantages {
+    margin-bottom: 110px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 250px;
+        min-height: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+
+        &-text {
+            font-size: 15px;
+            line-height: 22px;
+            color: $color_text;
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
